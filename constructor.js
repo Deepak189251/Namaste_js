@@ -2,42 +2,33 @@ function BankAccount (customerName, balance) {
     this.customerName = customerName;
     this.accountNumber = Date.now();
     this.balance = balance;
-
-    this.deposit = (amount) => {
-        this.balance += amount;
-    }
-
-    this.withdraw = (amount) => {
-        this.balance -= amount;
-    }
 }
-/*
-const deepak = new BankAccount(`Deepak`, 2000);
-const kartik = new BankAccount(`Kartik`, 1000);
 
-kartik.deposite(500);
+BankAccount.prototype.deposit = function (amount) {
+    this.balance += amount;
+}
 
-console.log(deepak, kartik);
-deepak.withdraw(300);
-console.log(deepak)  */
+BankAccount.prototype.withdraw = function (amount){
+    this.balance -= amount;
+}
+
+// Opening form
 
 const createForm = document.getElementById(`create`);
 const customerName = document.getElementById(`name`);
 const balance = document.getElementById(`balance`);
 
+// Deposite form
+
 const depositForm = document.getElementById(`deposit`);
-const accountNumber = document.getElementById(`accountnumber`);
-const depositAmount = document.getElementById(`amount`);
+const dpAccountNumber = document.getElementById(`D-accountnumber`);
+const depositAmount = document.getElementById(`D-amount`);
 
-let btn 
-document.querySelectorAll(`button`).forEach((occur) => {
-   let id = occur.getAttribute(`id`);
-    occur.addEventListener(`click`, ()=>{
-       btn = id;
-    })
-})
+// Withdraw form 
 
-console.log(btn);
+const withdrawFrom = document.getElementById(`withdraw`);
+const wdAccountNumber = document.getElementById(`W-accountnumber`);
+const withdrawAmount = document.getElementById(`W-amount`);
 
 
 const customers = [];
@@ -53,8 +44,23 @@ createForm.addEventListener(`submit`,(e) => {
 
 depositForm.addEventListener(`submit`, (e) => {
     e.preventDefault();
-   const found = customers.find((cu) => cu.accountNumber === +accountNumber.value);
+   const found = customers.find((name) => name.accountNumber === +dpAccountNumber.value);
    found.deposit( +depositAmount.value);
    console.log(found)
 })
 
+withdrawFrom.addEventListener(`submit`, (e) =>{
+    e.preventDefault();
+    const found = customers.find((name) => name.accountNumber === +wdAccountNumber.value);
+    found.withdraw(+withdrawAmount.value);
+    console.log(found)
+})
+
+
+/*
+
+deepak.deposit(400);
+ console.log(deepak);
+
+deepak.withdraw(300);
+console.log(deepak) */
