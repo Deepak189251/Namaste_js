@@ -1,5 +1,5 @@
 // function statement
-
+/*
 
 function outer (){
     console.log(`function statement`);
@@ -13,6 +13,10 @@ outer();
 let b = function ()
       { console.log(`function expression`); }
 b();
+ */
 
+let arr = [`Deepak`, `Behera`]
 
-JSON.stringify()
+function happy (){
+    console.log("happy");
+}
