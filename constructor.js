@@ -56,7 +56,6 @@ withdrawFrom.addEventListener(`submit`, (e) =>{
     console.log(found)
 })
 
-
 /*
 
 deepak.deposit(400);
