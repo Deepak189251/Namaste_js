@@ -103,7 +103,7 @@ const users = [
 
 const output = users.map((user)=>{
     return user.firstname + " "+ user.lastname 
-})
+})  
 
 
 // This is use of filter method : It will return an array which contains objects who satisfy the given condition.
