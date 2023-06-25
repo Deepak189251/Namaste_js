@@ -93,7 +93,7 @@ async function weatherData (){
 
 weatherData()
 
-console.log("hello") */
+console.log("hello") 
 
 var x = 5;
  
@@ -103,3 +103,16 @@ function num () {
 }
 
 num()
+*/
+
+const animal = [1, 2, 3, 4, 5];
+
+function multiply (arr) {
+    console.log(arr)
+    if(arr.length <= 0){
+        return 1;
+    }
+    else return arr[arr.length - 1] * multiply(arr.slice(0, arr.length - 1))
+}
+
+ console.log(multiply(animal)) 
