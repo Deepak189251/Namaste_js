@@ -93,8 +93,6 @@ async function weatherData (){
 
 weatherData()
 
-console.log("hello") 
-
 var x = 5;
  
 function num () {
