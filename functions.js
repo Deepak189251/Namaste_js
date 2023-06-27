@@ -11,7 +11,7 @@ outer();
 
 
 let b = function ()
-      { console.log(`function expression`); }
+      { console.log(`function expression`); }  
 b();
  
 
@@ -24,8 +24,6 @@ function happy (){
  
 const vay = arr.prototype
 console.log(vay); English 
-
-
 
 class ticket {
     constructor (name, trainNo, date){
