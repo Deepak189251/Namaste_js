@@ -46,11 +46,10 @@ console.log(tiket1.cancalationDeadLine)
 
 const num = 10;
 
-*/
 
-// Playing with setTimeOut in Local Environment.
+Playing with setTimeOut in Local Environment.
 
-/*
+
 console.log(`start`)
 
 setTimeout(function cb(){
