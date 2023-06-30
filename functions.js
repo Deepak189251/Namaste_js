@@ -57,7 +57,10 @@ setTimeout(function cb(){
     console.log(new Date().getTime());
 }, 4000);
 
-//  Here we want to block the (main thread or call stack) for 10 seconds.
+  
+Here we want to block the (main thread or call stack) for 10 seconds.
+
+
 let startDate = new Date().getTime();
 console.log(startDate)
 let endDate = startDate;
