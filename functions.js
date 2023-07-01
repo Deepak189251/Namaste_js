@@ -7,7 +7,7 @@ function outer (){
 outer();
 
 
-// function expression 
+function expression 
 
 
 let b = function ()
