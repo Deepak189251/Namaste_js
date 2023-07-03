@@ -43,8 +43,7 @@ function proceedToPayment (orderId){
 */
 /*
 const datas = [
-    {name: "deepak", profession: "student"},
-    {name: "kartik", profession: "student"}
+    {name: "deepak", profession: "student"}
 ]
 
 const getData = (data) => {
