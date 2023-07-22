@@ -82,8 +82,6 @@ console.log(`Loop completed`);
    timeout (i);
   }
 
-
-
 for (var i = 1; i <= 5; i++){
     setTimeout(function cb(){
         console.log(i)
@@ -92,8 +90,10 @@ for (var i = 1; i <= 5; i++){
   
   below this is an another example.
   
- 
+
 */
+
+
 
 const users = [
     {firstname: "Deepak", lastname: "Behera", age: 26},

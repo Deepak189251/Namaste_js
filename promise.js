@@ -100,7 +100,7 @@ function num () {
 }
 
 num()
-*/
+
 
 const animal = [1, 2, 3, 4, 5];
 
@@ -113,3 +113,26 @@ function multiply (arr) {
 }
 
  console.log(multiply(animal)) 
+
+
+
+var a = 1;
+function x (){
+    if (a) var b = 3;
+    console.log(a)
+}
+x();
+*/"https://www.swiggy.com/dapi/restaurants/list/v5?lat=20.462521&lng=85.8829895&page_type=DESKTOP_WEB_LISTING"
+
+const getData = async() => {
+    let data = "Hello World";
+    return data;
+
+    }
+
+ console.log(1)
+ getData()
+ .then((data) => {
+     console.log(data);
+ })
+ console.log(3)
