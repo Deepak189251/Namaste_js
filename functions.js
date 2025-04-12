@@ -104,20 +104,26 @@ const users = [
 
 
 // This is use of map method : It will return an array which contains full name of each object
-
+/*
 const output = users.map((user)=>{
     return user.firstname + " "+ user.lastname 
-})  
+})  */
 
 
 // This is use of filter method : It will return an array which contains objects who satisfy the given condition.
-
+/*
 const output2 = users.filter((user) => {
     return user.lastname === "Behera"
-})
+})*/
 
+/* const result = users.filter((res) => {
+    return res.age < 30
+ })
+
+ console.log(result)*/
+ 
 // This is use of reduce method
-
+/*
 const output3 = users.reduce((acc, curr)=>{
    if(acc[curr.age]){
     acc[curr.age] = ++acc[curr.age]
@@ -149,4 +155,46 @@ const output5 = users.reduce((acc, curr) => {
    return acc
 }, []) 
 
-console.log(output5)
+console.log(output5)*/
+
+
+/*
+async function create () {
+    return "hello"
+}
+
+const result = create()
+
+result.then((res) => console.log(res))*/
+
+
+/*const api = "https://api.github.com/users/Deepak189251"
+fetch(api)
+.then((res) => {
+   res = res.json()
+   return res
+})
+.then((res) => {
+    console.log(res)
+})
+*/
+
+/*const arr = [{movie:'Raaz', year:'2002'}, {movie:'1920', year:'2008'}, {movie:'Raat', year:'1992'}, {movie:'Bhoot', year:'2003'}, {movie:'Pari', year:'2018'}]
+console.log(arr)
+
+arr.map((res, index) => {
+    console.log("the movie" + res.movie + "released in year" + res.year)
+})*/
+
+const movieString = "[{movie:'Bhoot', year:'2003'}, {movie:'Raaz', year:'2002'}, {movie:'Pari', year:'2018'}, {movie:'1920', year:'2008'}, {movie:'Stree', year:'2018'}]";
+const mu = {movieString}
+//const movieArray = JSON.parse(movieString, );
+const movieArray = JSON.stringify(movieString)
+const movieArrrrray = JSON.parse(movieArray)
+movieArrrrray.map((res) => {
+    console.log(res.movie + res.year)
+})
+//console.log(mu);
+console.log(movieArray)
+console.log(movieArrrrray)
+
